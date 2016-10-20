@@ -5,7 +5,7 @@ import { trainingsMockData } from './mockData';
 class RestAPI {
   GetTrainings(): Promise<Array<Training>> {
     let trainingsPromise = new Promise((resolve, reject) => {
-      resolve(trainingsMockData);
+      setTimeout(() => resolve(trainingsMockData), 5000);
     });
 
     return trainingsPromise;
