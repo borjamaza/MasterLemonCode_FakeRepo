@@ -1,4 +1,4 @@
-import {Training} from "./model/TrainingModel"
+import {Training} from "./model/TrainingModel";
 
 import {RestAPI} from "./api/restAPI";
 
@@ -10,9 +10,8 @@ restAPI.GetTrainings()
   )
   .catch((error) => handleError(error));
 
-function displayTrainings(trainings:Array<Training>)
-{
-  document.write("<p><b>Showing list of trinings from Rest API</b></p>")
+function displayTrainings(trainings: Array<Training>) {
+  document.write("<p><b>Showing list of trinings from Rest API</b></p>");
 
   document.write("<table><tr><td>Name</td><td>Tutor</td><td>Start</td><td>End</td></tr>");
   trainings.forEach((training) => {
@@ -21,7 +20,6 @@ function displayTrainings(trainings:Array<Training>)
   document.write("</table>");
 };
 
-function handleError(error)
-{
+function handleError(error) {
   document.write(error);
 }

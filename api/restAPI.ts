@@ -1,6 +1,6 @@
-import { Promise } from 'es6-promise';
-import { Training } from '../model/TrainingModel';
-import { trainingsMockData } from './mockData';
+import {Promise} from "es6-promise";
+import {trainingsMockData} from "./mockData";
+import {Training} from "../model/TrainingModel";
 
 class RestAPI {
   GetTrainings(): Promise<Array<Training>> {
